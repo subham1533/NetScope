@@ -36,11 +36,25 @@ By feeding this into a trained **RandomForest & XGBoost Ensemble Model**, the en
 ## 📸 See It In Action
 
 ### 1. Real-Time Web Dashboard
-*(Drag and drop an image of your live dashboard running at localhost:5000 here)*
+![Real-Time Web Dashboard](dashboard_screenshot.png)
 > *The dashboard provides a live breakdown of the applications consuming data, alongside immediate security red alerts if blocked traffic is intercepted.*
 
 ### 2. Terminal CLI Report
-*(Drag and drop an image of the colored terminal output here)*
+```text
+╔══════════════════════════════════════════════════════════════╗
+║                      PROCESSING REPORT                        ║
+╠══════════════════════════════════════════════════════════════╣
+║ Total Packets:                77                              ║
+║ Forwarded:                    73                              ║
+║ Dropped:                       4                              ║
+╠══════════════════════════════════════════════════════════════╣
+║                   APPLICATION BREAKDOWN                       ║
+╠══════════════════════════════════════════════════════════════╣
+║ HTTP       1   25.0% # [SNI: 100%]                           ║
+║ YouTube    1   25.0% # (BLOCKED) [SNI: 100%]                 ║
+║ Unknown    2   50.0%                                         ║
+╚══════════════════════════════════════════════════════════════╝
+```
 > *The terminal UI gives you raw packet-by-packet logs (if in verbose mode) and generates a beautiful aggregated end-of-run table.*
 
 ---
